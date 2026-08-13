@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OficinaManager - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🔧 OficinaManager</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="agendamento.html">Agendamentos</a>
+            <a href="pagamento.html">Pagamentos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Novo Cliente / Veículo</h2>
+        <div class="card">
+            <form id="form-cadastro">
+                <div style="margin-bottom: 15px;">
+                    <label>Nome do Cliente:</label><br>
+                    <input type="text" id="nome" required style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Veículo:</label><br>
+                    <input type="text" id="veiculo" required placeholder="Ex: Gol 1.0 2015" style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Placa:</label><br>
+                    <input type="text" id="placa" required style="width: 100%; padding: 8px;">
+                </div>
+                <button type="submit">Salvar Cadastro</button>
+            </form>
+            <p id="msg-cadastro" style="color: green; margin-top: 10px; display: none;">Cliente cadastrado com sucesso!</p>
+        </div>
+    </main>
+
+    <script src="js/mockData.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
